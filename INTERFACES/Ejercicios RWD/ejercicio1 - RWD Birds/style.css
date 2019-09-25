@@ -23,56 +23,60 @@ section{
 	padding: 1em;
 }
 
-@media only screen and (max-width: 1200px) {
+section img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
 	body {
 	  background-color: yellow;
 	}
 	section{
 		background: rgba(211, 211, 107, 0.79);
-		font-size: .9em;
+		/*font-size: .9em;
 		float: left;
 		margin: 1%;
-		padding: 1em;
-		width: 30%;
+		padding: 1em;*/
+		width: 29.5%;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
 	body {
 	  background-color: red;
 	}
 	section{
 		background: rgba(218, 117, 117, 0.803);
-		font-size: .9em;
+		/*font-size: .9em;
 		float: left;
 		margin: 1%;
-		padding: 1em;
-		width: 30%;
+		padding: 1em;*/
+		width: 27.5%;
 	}
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 767px) and (min-width: 360px) {
 	body {
 	  background-color: green;
 	}
 	section{
 		background: rgba(94, 199, 94, 0.801);
-		font-size: .9em;
+		/*font-size: .9em;
 		float: left;
 		margin: 1%;
-		padding: 1em;
-		width: 47%;
+		padding: 1em;*/
+		width: 39%;
 	}
 }
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 359px){
 	body {
 	  background-color: blue;
 	}
 	section{
 		background: rgba(108, 108, 225, 0.808);
-		font-size: .9em;
+		/*font-size: .9em;
 		float: left;
 		margin: 1%;
-		padding: 1em;
-		width: 100%;
+		padding: 1em;*/
+		width: 88%;
 	}
 }
 
