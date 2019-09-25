@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ejercicio 2</title>
+    </head>
+    <style>
+        *{
+            background: lightblue;
+        }
+        #calen{
+            margin: 1%;
+            float: left;
+            border: solid 3px;
+            width: 13%
+        }
+        #evento{
+            margin: 1%;
+            float: left;
+            border: solid 2px;
+            width: 13%
+        }
+        button{
+            background: gray;
+        }
+        textarea{
+            background: wheat;
+        }
+
+    </style>
+<body>
+
+
+    <div id="calen">
+
+    
+    <h2>Calendario</h2>
+
+		<table>
+  			<caption>Diciembre de 2019</caption>
+  			<tbody>
+    			<tr>
+      			<th>L</th>
+     			<th>M</th>
+      			<th>X</th>
+      			<th>J</th>
+      			<th>V</th>
+      			<th>S</th>
+      			<th>D</th>
+    			</tr>
+    			<tr>
+      			<td></td>
+     	 		<td><button onclick="guardarDia(1)">1</button></td>
+      			<td><button onclick="guardarDia(2)">2</button></td>
+      			<td><button onclick="guardarDia(3)">3</button></td>
+      			<td><button onclick="guardarDia(4)">4</button></td>
+      			<td><button onclick="guardarDia(5)">5</button></td>
+      			<td><button onclick="guardarDia(6)">6</button></td>
+    			</tr>
+    			<tr>
+      			<td><button onclick="guardarDia(7)">7</button></td>
+      			<td><button onclick="guardarDia(8)">8</button></td>
+      			<td><button onclick="guardarDia(9)">9</button></td>
+      			<td><button onclick="guardarDia(10)">10</button></td>
+      			<td><button onclick="guardarDia(11)">11</button></td>
+      			<td><button onclick="guardarDia(12)">12</button></td>
+      			<td><button onclick="guardarDia(13)">13</button></td>
+    			</tr>
+    			<tr>
+      			<td><button onclick="guardarDia(14)">14</button></td>
+      			<td><button onclick="guardarDia(15)">15</button></td>
+      			<td><button onclick="guardarDia(16)">16</button></td>
+     	 		<td><button onclick="guardarDia(17)">17</button></td>
+      			<td><button onclick="guardarDia(18)">18</button></td>
+      			<td><button onclick="guardarDia(19)">19</button></td>
+      			<td><button onclick="guardarDia(20)">20</button></td>
+    			</tr>
+    			<tr>
+      			<td><button onclick="guardarDia(21)">21</button></td>
+      			<td><button onclick="guardarDia(22)">22</button></td>
+      			<td><button onclick="guardarDia(23)">23</button></td>
+      			<td><button onclick="guardarDia(24)">24</button></td>
+      			<td><button onclick="guardarDia(25)">25</button></td>
+      			<td><button onclick="guardarDia(26)">26</button></td>
+      			<td><button onclick="guardarDia(27)">27</button></td>
+    			</tr>
+    			<tr>
+      			<td><button onclick="guardarDia(28)">28</button></td>
+      			<td><button onclick="guardarDia(29)">29</button></td>
+      			<td><button onclick="guardarDia(30)">30</button></td>
+      			<td><button onclick="guardarDia(31)">31</button></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+    			</tr>
+  			</tbody>
+        </table>
+    </div>
+
+    <div id="evento">
+
+        <form>
+                <textarea name="texto" id="textoEvento" cols="35" rows="15"></textarea>
+                <button onclick="asignar()">Asignar </button>
+                <button onclick="visualizar()">Visualizar </button>
+        </form>
+
+    </div>
+
+
+
+<script language="JavaScript">
+
+    let days = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+    let textoE = new Array(31)
+    let dia = 1
+    function guardarDia(evt, d){
+		var evento = evt || window.event;
+        evento.preventDefault();
+        dia = d
+        alert(dia);
+    }
+    function visualizar(evt) {
+		var evento = evt || window.event;
+        evento.preventDefault();
+		document.getElementById("textoEvento").value = ""
+        document.getElementById("textoEvento").value = textoE[dia-1]
+    }
+    function asignar(evt) {
+		var evento = evt || window.event;
+        evento.preventDefault();
+        textoE[dia-1] = document.getElementById("textoEvento").value
+    }
+</script> 
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>

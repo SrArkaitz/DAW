@@ -1,0 +1,17 @@
+@media screen {
+    div#paginacion {
+        border: 1px solid #CCC;
+        background-color: #E0E0E0;
+        padding: .5em;
+        height: 1em;
+      }
+      .siguiente {
+        float: right;
+      }
+      .anterior {
+        float: left;
+      }
+      div.clear {
+        clear: both;
+      }
+}

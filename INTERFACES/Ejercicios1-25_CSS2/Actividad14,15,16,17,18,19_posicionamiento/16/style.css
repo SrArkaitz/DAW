@@ -1,0 +1,31 @@
+@media screen {
+	#bricolaje h1{
+       background: lightgreen;
+       text-align: center;
+       padding-top: 10px;
+       margin-top: 1%;
+    }
+    #jardineria{
+        float: left;
+        width: 22%;
+        margin-left: 17%
+    }
+    #electricidad{
+        float: left;
+        width: 22%;
+    }
+    #fontaneria{
+        float: left;
+        width: 22%;
+        margin-right: 17%
+        
+    }
+
+    #texto{
+        margin-top: 18%;
+        margin-left: 13%;
+        margin-right: 20%;
+    }
+
+    
+}

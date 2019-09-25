@@ -1,0 +1,85 @@
+@media screen {
+    *{
+        background: rgb(160, 156, 156);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+	h1{
+        text-align: center
+    }
+    p#m1{
+        background: rgb(187, 141, 106);
+        border: solid 2px rgb(140, 107, 59);
+        padding-bottom: 5em;
+        margin: 0 auto;
+        text-align: center;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    p#m2{
+        background: rgb(129, 223, 110);
+        border: solid 2px rgb(35, 177, 7);
+        float: left;
+        position: relative;
+        top: 12em;
+        left: 52em;
+        z-index: 10;
+        width: 20em;
+        height: 10em;
+        text-align: center
+    }
+    p#m3{
+        background: rgb(232, 232, 147);
+        border: solid 2px rgb(240, 240, 25);
+        float: left;
+        margin-top: 5%;
+        margin-left: 13%;
+        /*position: relative;
+        top: 20em;
+        left: 40em;*/
+        width: 20em;
+        height: 10em;
+        z-index: 1;
+    }
+    p#m4{
+        background: rgb(147, 216, 232);
+        border: solid 2px rgb(25, 57, 240);
+        text-align: right;
+        float: left;
+        margin-left: 5%;
+        margin-top: 5%;
+
+        /*position: relative;
+        top: 20em;
+        left: 40em;*/
+        width: 20em;
+        height: 10em;
+        z-index: 1;
+    }
+    p#m5{
+        background: rgb(237, 175, 240);
+        border: solid 2px rgb(240, 25, 240);
+        float: left;
+        
+        margin-left: 30%;
+        /*position: relative;
+        top: 20em;
+        left: 40em;*/
+        width: 20em;
+        height: 10em;
+        z-index: 1;
+    }
+    p#m6{
+        background: rgb(232, 147, 149);
+        border: solid 2px rgb(240, 25, 64);
+        float: left;
+        margin-left: 5%;
+        text-align: right;
+        /*position: relative;
+        top: 20em;
+        left: 40em;*/
+        width: 20em;
+        height: 10em;
+        z-index: 1;
+    }
+}

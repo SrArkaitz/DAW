@@ -1,0 +1,17 @@
+@media screen {
+h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+*{
+	font-family: Arial, Verdana;
+}
+h2{
+	text-transform: uppercase;
+}
+strong{
+	text-decoration: underline;
+}
+}
+
+

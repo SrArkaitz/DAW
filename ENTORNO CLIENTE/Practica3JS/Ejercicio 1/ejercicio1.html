@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ejercicio1</title>
+    </head>
+<body>
+
+    <h3>Ingresar datos</h3>
+    <form action="" method="post" id="myForm" onsubmit="return comprobar();">
+        <fieldset>
+                <legend>Datos:</legend>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" value="" id="username"/>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" value="" id="password"/>
+                </div>
+                <input type="submit" value="Send">
+        </fieldset>
+        
+    </form>
+
+<script language="JavaScript">
+
+    let usuarios = ["arkaitz", "Julen", "raul", "Eric"]
+    let contraseñas = ["12345", "12ab", "34cd", "abcde"]
+
+    let registrado = false
+    let pos
+    let msj 
+    function comprobar(){
+
+        let username = document.getElementById("username");
+        let password = document.getElementById("password");     
+        
+        usuarios.forEach( comparar);
+        if (registrado == true) {
+            if (password.value == contraseñas[pos]) {
+                msj = msj + " y es su contraseña"
+                alert(msj)
+                return true;
+            }else{
+                msj = msj + " pero no es su contraseña"
+                alert(msj)
+                return false;
+            }
+        }else{
+            msj = "El usuario no existe"
+            alert(msj)
+            return false;
+        }
+    }
+    function comparar(item, position){
+        if (username.value == item) {
+            pos = position
+            registrado = true
+            msj = "El usuario existe"
+        }
+    }
+    
+</script> 
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>

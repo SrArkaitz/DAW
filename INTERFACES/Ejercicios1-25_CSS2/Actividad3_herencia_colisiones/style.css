@@ -1,0 +1,53 @@
+@media screen {
+	h1#titulo{
+        font-size: 48px; color: teal;
+    }
+    h2#subtitulo{
+        font-size: 24px; color: blue;
+    }
+    strong{
+        color: red;
+    }
+    span.destacado{
+        color: orange;
+    }
+     a{
+        color: red
+    }
+    a em{
+        color: blue;
+    }
+    span.especial{
+        color: purple;
+    }
+    th.especial{
+        color: orange;
+    }
+    table strong{
+        color: orange;
+    }
+    th{
+        color: red;
+        border: 1px solid black;
+    }
+    td{
+        color: green;
+        border: 1px solid black;
+    }
+    caption{
+        color: blue;
+    }
+    #adicional p{
+        color: olive;
+    }
+    span#especial{
+        color: fuchsia;
+    }
+    #adicional a{
+        color: green;
+    }
+    table{
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+}

@@ -1,0 +1,78 @@
+/*
+-----FUNDAMENTOS RWD-----
+
+Viewport
+Media queries
+Modelo de cajas (propiedad box-sizing)
+
+*/
+
+html{
+    /*font-size: 10px; /*Si no declaramos este valor, por defecto un EM es 16px*/
+}
+
+body{
+	background: #222
+}
+
+section{
+	background: rgba(255,255,255,.6);
+    font-size: .9em;
+	float: left;
+	margin: 1%;
+	padding: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+	body {
+	  background-color: yellow;
+	}
+	section{
+		background: rgba(211, 211, 107, 0.79);
+		font-size: .9em;
+		float: left;
+		margin: 1%;
+		padding: 1em;
+		width: 30%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	body {
+	  background-color: red;
+	}
+	section{
+		background: rgba(218, 117, 117, 0.803);
+		font-size: .9em;
+		float: left;
+		margin: 1%;
+		padding: 1em;
+		width: 30%;
+	}
+}
+@media only screen and (max-width: 360px) {
+	body {
+	  background-color: green;
+	}
+	section{
+		background: rgba(94, 199, 94, 0.801);
+		font-size: .9em;
+		float: left;
+		margin: 1%;
+		padding: 1em;
+		width: 47%;
+	}
+}
+@media only screen and (max-width: 359px) {
+	body {
+	  background-color: blue;
+	}
+	section{
+		background: rgba(108, 108, 225, 0.808);
+		font-size: .9em;
+		float: left;
+		margin: 1%;
+		padding: 1em;
+		width: 100%;
+	}
+}
+

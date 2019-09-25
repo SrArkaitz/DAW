@@ -1,0 +1,19 @@
+@media screen {
+h1{
+	font-family: Georgia; font-size: 32px; font: small-caps;
+}
+*{
+	font-family: Arial, Verdana;
+}
+h2{
+	font-family: Georgia; font-size: 24px; font-style: italic; font: small-caps;
+}
+li{
+	font-weight: bold;
+}
+strong{
+	font-weight: lighter;
+}
+}
+
+

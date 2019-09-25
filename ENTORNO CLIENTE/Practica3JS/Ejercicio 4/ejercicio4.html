@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ejercicio 3</title>
+    </head>
+    <style>
+        
+
+    </style>
+<body>
+<h1>MArcar todas las opciones de un formulario</h1>
+<p>A veces en un formulario puede interesarte marcar todas las opciones posibles. Este codigo permite hacerlo rapidamente:</p>
+
+<form action="">
+    <input type="checkbox"  value="Marcar todos" onClick="checkall(this)">Marcar todos
+    <br>
+    <input type="checkbox" name="foo" value="Op 1">Op 1
+    <br>
+    <input type="checkbox" name="foo" value="Op 2">Op 2
+    <br>
+    <input type="checkbox" name="foo" value="Op 3">Op 3
+    <br>
+    <input type="checkbox" name="foo" value="Op 4">Op 4 
+    <br>
+    <input type="checkbox" name="foo" value="Op 5">Op 5 
+    <br>
+    <input type="checkbox" name="foo" value="Op 6">Op 6 
+    <br>
+    <input type="checkbox" name="foo" value="Op 7">Op 7 
+    <br>
+    <br>
+    <input type="submit">
+    </form> 
+<script language="JavaScript">
+    
+function checkall(check) {
+  checkboxes = document.getElementsByName("foo");
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = check.checked;
+  }
+}
+   
+</script> 
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>

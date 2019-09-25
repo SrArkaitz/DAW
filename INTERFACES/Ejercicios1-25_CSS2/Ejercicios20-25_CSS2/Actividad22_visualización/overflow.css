@@ -1,0 +1,16 @@
+@media screen {
+
+
+
+    div{
+        background: rgb(230, 148, 161);
+        width: 20%;
+        height: 20%;
+        overflow: scroll;
+        /*hidden solo mostraría lo que se ve sin la posibilidad de ver lo de abajo y visible mostraría todo*/ 
+        /*visibility: hidden;
+        Esta función dejaria de mostrar el div*/
+        /*display funciona para ocultar elementos en la pantalla y como se ha ocultado el resto de objetos se mueven como si no existiera s*/
+    }
+
+}

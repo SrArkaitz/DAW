@@ -1,0 +1,19 @@
+@media screen {
+	ul.lista-sin{
+		list-style-type: none;
+	}
+	ul.lista-circulos{
+		list-style-type: circle;
+	}
+	ul.lista-cuadrados{
+		list-style-type: square;
+	}
+	ol.lista-romanos{
+		list-style-type: lower-roman;
+	}
+	ol.lista-griegos{
+		list-style-type: lower-greek;
+	}
+}
+
+

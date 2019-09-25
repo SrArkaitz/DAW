@@ -1,0 +1,28 @@
+@media screen {
+	h1{
+        background: lightgreen;
+        margin-bottom: 30px;
+        font-family: Verdana, serif, Tahoma, sans-serif;
+        
+    }
+    div#indice{
+        background: lightblue;
+        border: 2px dotted #AAA;
+        width: 31%;
+        padding: 0.5em;
+        float: left;
+        margin-right: 10px;
+    }
+    div#carta{
+        background: lightgrey;
+        width: 66%;
+        padding: 0.5em;
+        float: right;
+        
+    }
+    div#indice p{
+        font-family: verdana, Times, serif;
+    }
+    
+    
+}

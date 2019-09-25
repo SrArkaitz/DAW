@@ -1,0 +1,41 @@
+@media screen {
+	#contenedor{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #cabecera{
+        margin: 0 auto;
+    }
+    #col-izq{
+        width: 25%;
+        float: left;
+    }
+    #col-der{
+        float: right;
+        width: 75%;
+    }
+    #contenido{
+        margin-left: 1%;
+        padding: 1%;
+       
+    }
+    .columna1 {
+        width: 31%; 
+        float: left;
+        
+        padding: 1%;
+    }
+    .columna2 {
+        width: 31%; 
+        float: left;
+        
+        padding: 1%;
+        
+    }
+    .columna3 {
+        width: 31%; 
+        float: left;
+        
+        padding: 1%;
+    }
+}
