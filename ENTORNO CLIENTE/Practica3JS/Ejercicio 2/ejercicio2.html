@@ -24,6 +24,7 @@
         }
         textarea{
             background: wheat;
+			font-size: 20px;
         }
 
     </style>
@@ -99,7 +100,7 @@
     <div id="evento">
 
         <form>
-                <textarea name="texto" id="textoEvento" cols="35" rows="15"></textarea>
+                <textarea name="texto" id="textoEvento" cols="22" rows="8.9"></textarea>
                 <button onclick="asignar()">Asignar </button>
                 <button onclick="visualizar()">Visualizar </button>
         </form>
@@ -111,11 +112,10 @@
 <script language="JavaScript">
 
     let days = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
-    let textoE = new Array(31)
+    let textoE = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     let dia = 1
-    function guardarDia(evt, d){
-		var evento = evt || window.event;
-        evento.preventDefault();
+    function guardarDia(d){
+		
         dia = d
         alert(dia);
     }
@@ -129,6 +129,7 @@
 		var evento = evt || window.event;
         evento.preventDefault();
         textoE[dia-1] = document.getElementById("textoEvento").value
+		document.getElementById("textoEvento").value = ""
     }
 </script> 
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
