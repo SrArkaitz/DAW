@@ -1,7 +1,8 @@
 .display-medium {
-
+    display: block;
 }
 
 body {
-
+    display: flex;
+    flex-direction: column;
 }

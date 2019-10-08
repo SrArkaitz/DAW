@@ -1,11 +1,12 @@
 .display-mini {
-
+    display: block;
 }
 
 body {
-
+    display: flex;
+	flex-direction: column;
 }
 
 select.display-mini {
-
+   
 }

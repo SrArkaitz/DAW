@@ -1,19 +1,23 @@
 .display-great {
-
+    display: block;
 }
 
 h1, h2 {
-
+    text-align: center;
 }
 
 header, footer, #wrapper {
-	
+	clear: both;
 }
 
 #main-nav {
-	
+    float: left;
+    width: 19%;
 }
 
 #main-section {
-	
+	float: left;
+    width: 80%;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
