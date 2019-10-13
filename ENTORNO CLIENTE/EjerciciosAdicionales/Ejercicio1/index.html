@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 1</title>
+</head>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<script src="main.js"></script>
+
+<body>
+    <form action="/action_page.php">
+        <label>DNI</label>
+        <input type="text" name="dni" value="" id="dni" required>
+        <br>
+        <label>Nombre</label>
+        <input type="text" name="nombre" value="" id="nombre" required>
+        <br>
+        <label>Código de la actividad</label>
+        <input type="text" name="codigoActividad" value="" id="codigo" required>
+        <label>Centro cívico</label>
+        <select name="centro" required id="centro">
+            <option selected="true" disabled></option>
+            <option value="Iparralde">Iparralde</option>
+            <option value="Judizmendi">Judizmendi</option>
+            <option value="Arana">Arana</option>
+            <option value="Lakua">Lakua</option>
+            <option value="Aldave">Aldave</option>
+        </select>
+        <br>
+        <label>Hora de inicio</label>
+        <input type="text" name="horaInicio" value="" required id="horaInicio">
+        <label>Hora fin</label>
+        <input type="text" name="horaFin" value="" required id="horaFin">
+        <br>
+        <label>Trimestre</label>
+        <br>
+        <input type="checkbox" name="primero" value="Primero" id="primero">Primero
+        <br>
+        <input type="checkbox" name="segundo" value="Segundo" id="segundo">Segundo
+        <br>
+        <input type="checkbox" name="tercero" value="Tercero" id="tercero">Tercero
+        <br>
+        <br>
+        <br>
+        <input type="button" onclick="guardar()" value="guardar">
+        <input type="button" onclick="continuar()" value="Guardar y continuar">
+    </form>
+
+</body>
+
+</html>

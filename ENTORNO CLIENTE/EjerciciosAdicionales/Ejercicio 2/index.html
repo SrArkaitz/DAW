@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 1</title>
+</head>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<script src="main.js"></script>
+
+<body onload="hello()">
+    <form action="">
+        <label>Fecha</label>
+        <input type="date" name="fecha" value="" id="fecha" required>
+        <br>
+        <label>Nombre</label>
+        <input type="text" name="nombre" value="" id="nombre" required>
+        <label>Hora</label>
+        <input type="number" name="hora" value="" id="hora" required max=6 min=1>
+        <br>
+        <br>
+        <input type="button" onclick="enviar()" value="Enviar">
+    </form>
+<div id="mostrar"></div>
+</body>
+
+</html>
