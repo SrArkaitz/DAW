@@ -1,0 +1,84 @@
+
+/**
+Añade aquí las indicaciones 1, 2 y 3
+*/
+*{
+  box-sizing: initial;
+}
+.container{
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+header h1{
+  text-align: center;
+}
+nav {
+  background-color: black;
+  color: white;
+}
+
+nav div {
+  display: inline-block;
+  padding: 10px;
+  width: 15%;
+}
+
+.sidebar {
+  background-color: black;
+  color: white;
+  height: 500px;
+  margin-top: 30px;
+  /*Añade aquí las indicaciones 4 y 4.1*/
+  float: left;
+  width: 15%;
+}
+
+.sidebar div {
+  padding: 10px;
+}
+
+section.courses {
+  margin-left: 5%;
+  /*Añade aquí las indicaciones 4, 4.2 y 5*/
+  float: left;
+  width: 80%;
+  display: flex;
+}
+
+.course {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+  /*Añade aquí la indicación 6*/
+ 
+}
+
+.course img {
+  width: 50%;
+}
+
+.articles {
+  column-count: 3;
+  float: left;
+  margin-left: 5%;
+  margin-top: 30px;
+  width: 80%;
+}
+
+footer {
+  background-color: lightgrey;
+  /*Añade aquí la indicación 7*/
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  position: absolute; 
+  width: 80%;
+  margin: 0px; 
+  bottom: 0;
+
+}
