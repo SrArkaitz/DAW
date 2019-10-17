@@ -1,0 +1,32 @@
+body{
+	width: 100%;
+	background: grey;
+	font-family: sans-serif;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+	background: lightgray;
+	width: 600px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+header{
+	background: white;
+	font-size: 15px;
+	padding: 10px;
+}
+article{
+	background: aqua;
+	padding: 20px;
+	width: 70%;
+}
+aside{
+	background: darkblue;
+	padding: 20px;
+	width: 30%;
+}

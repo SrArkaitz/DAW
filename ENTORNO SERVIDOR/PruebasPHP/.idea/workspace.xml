@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb2e278-cc33-45fb-a8e3-eefd1eb91e07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrayConValores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrayMultidimensionales.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/if.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prueba2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../INTERFACES/Ejercicios Flexbox/Ejercicios1-5/1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../INTERFACES/Ejercicios Flexbox/Ejercicios1-5/1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../INTERFACES/Ejercicios Flexbox/Ejercicios1-5/1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../INTERFACES/Ejercicios Flexbox/Ejercicios1-5/1/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../INTERFACES/Ejercicios RWD/ejercicio1 - RWD Birds/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../INTERFACES/Ejercicios RWD/ejercicio1 - RWD Birds/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +51,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.arrayConValores.php">
+    <configuration name="arrayConValores.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/arrayConValores.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="prueba2.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/prueba2.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/index.php">
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.arrayConValores.php" />
+        <item itemvalue="JavaScript Debug.prueba2.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -60,6 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1571221348185</updated>
       <workItem from="1571221349948" duration="4471000" />
+      <workItem from="1571305861943" duration="1649000" />
+      <workItem from="1571307736057" duration="2243000" />
     </task>
     <servers />
   </component>
@@ -71,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

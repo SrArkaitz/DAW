@@ -7,9 +7,7 @@ Modelo de cajas (propiedad box-sizing)
 
 */
 
-html{
-    /*font-size: 10px; /*Si no declaramos este valor, por defecto un EM es 16px*/
-}
+
 
 body{
 	background: #222

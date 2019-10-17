@@ -31,4 +31,35 @@ ul.navegacion li a {
 	font-size: 20px;
 	padding: 10px;
 }
+.navegacion{
+	display: flex;
+	justify-content: space-around
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background: black;
+	height: 300px;
+}
+.columna1{
+	border: solid;
+	background: grey; 
+	order: 2;
+	
+}
+.columna2{
+	border: solid;
+	order: 3;
+	background: grey;
+	flex-shrink: 0.9;
+}
+.columna3{
+	border: solid;
+	order: 1;
+	background: grey;
+	flex-shrink: 0.75;
+}
 
