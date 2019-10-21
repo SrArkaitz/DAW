@@ -1,0 +1,54 @@
+#main{
+	min-height: 800px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+body{
+	font-family: Helvetica, sans-serif;
+	font-size: 24px;
+	background: #999999;
+}
+article{
+	background: #dddd88;
+	flex: 3;
+	order:2;
+}
+nav, aside{
+	background: #ccccff;
+	flex: 1;
+}
+nav{
+	order: 1;
+}
+aside{
+	order: 3;
+}
+header, footer{
+	background: #ffeebb;
+}
+article, nav, aside{
+	margin: 4px;
+	padding: 5px;
+	border: 1px solid #cccc33;
+	border-radius: 7pt;
+}
+
+@media screen and (max-width: 640px){
+	#main{
+		flex-direction: column;
+	}
+	#main nav{
+		height: 50px;
+		order: 2;
+	}
+	#main article{
+		height: 50px;
+		order: 1;
+	}
+	#main aside{
+		height: 50px;
+		order: 3;
+	}
+}

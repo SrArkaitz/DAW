@@ -13,6 +13,9 @@ html {
 body {
     background-color: lightgray;
     font-family:sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 ul.principal {
@@ -22,6 +25,9 @@ ul.principal {
     padding: 10px;
     background: gray;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .menu {
@@ -35,15 +41,23 @@ ul.principal {
     margin: 0;
     padding: 0;
 }
-
 .social {
-
+display: flex;
 }
 
 @media (max-width: 768px) {
-
+    ul.principal{
+        
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 340px) {
-
+    ul.principal {
+        flex-direction: column;
+    }
+    .social{
+        display: flex;
+        
+    }
 }
