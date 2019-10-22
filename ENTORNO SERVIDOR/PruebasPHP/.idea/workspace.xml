@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb2e278-cc33-45fb-a8e3-eefd1eb91e07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/for.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/switch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/while.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foreach.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foreach2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/while.php" beforeDir="false" afterPath="$PROJECT_DIR$/while.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/Applications/XAMPP/bin/php-7.1.32" />
+    <property name="last_opened_file_path" value="/Applications/MAMP/bin/php/php7.2.21/bin/php" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,6 +81,7 @@
       <workItem from="1571305861943" duration="1649000" />
       <workItem from="1571307736057" duration="2533000" />
       <workItem from="1571384055702" duration="4015000" />
+      <workItem from="1571725245728" duration="6829000" />
     </task>
     <servers />
   </component>

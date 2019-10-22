@@ -1,78 +1,97 @@
 <html>
 <head>
     <title>Hola Mundo PHP</title>
+
+    <style>
+        table, tr, td{
+            border: solid;
+        }
+    </style>
 </head>
 <body>
 <?php
 
 $contactos = array(
-    "giogio" => array(
-        "nombre" => "Giorno",
-        "apellido" => "Giovanna",
-        "telefono" => "678954321",
-        "Email" => "giorno.giovanna@gmail.com"
+     array(
+        "Giorno",
+        "Giovanna",
+        "678954321",
+        "giorno.giovanna@gmail.com"
     ),
-    "jojo" => array(
-        "nombre" => "Jotaro",
-        "apellido" => "Kujo",
-        "telefono" => "675434343",
-        "Email" => "jotaro.kujo@gmail.com"
+     array(
+        "Jotaro",
+        "Kujo",
+        "675434343",
+        "jotaro.kujo@gmail.com"
 ),
-    "josuke" => array(
-        "nombre" => "Josuke",
-        "apellido" => "Higashikata",
-        "telefono" => "67896454",
-        "Email" => "higashikata.josuke@gmail.com"
+     array(
+        "Josuke",
+        "Higashikata",
+        "67896454",
+        "higashikata.josuke@gmail.com"
 )
 );
 
 
 function tablaContactos($array){
-
-    $i =0;
-    $x = 0;
+    $i=0;
     while ($i < count($array)){
-        echo "<tr></tr>";
-        while($x < count($array[$i])){
-            echo"<th> $array[$i][$x] </th>";
+        echo "<tr>";
+        $x = 0;
+        while($x < count($array[$i]))
+        {
+            echo "<td>" . $array[$i][$x] . "</td>";
             $x++;
         }
+        echo "</tr>";
         $i++;
     }
-
 }
+
 function tablaContactos2($array){
 
     $i =0;
-    $x = 0;
 
     do{
-        echo "<tr></tr>";
+        echo "<tr>";
+        $x=0;
         do{
-            echo"<th> $array[$i][$x] </th>";
+            echo "<td>" . $array[$i][$x] . "</td>";
             $x++;
         }while($x < count($array[$i]));
         $i++;
+        echo "</tr>";
     }while ($i < count($array));
 
 }
 
-$cochessArray = array("Honda","Volvo", "Audi", "Seat");
-function cochess($array){
+$cochesListaArray = array("Honda","Volvo", "Audi", "Seat");
+function cochesLista($array){
     $i = 0;
     do{
 
         echo "<li>$array[$i]</li>";
-        $i= $i+1;
-    }while($i < $array);
+        $i++;
+    }while($i < count($array));
 }
 
 
 ?>
 
+<table>
+    <?php tablaContactos($contactos); ?>
+</table>
+
+
+<table>
+    <?php tablaContactos2($contactos); ?>
+</table>
+
+
+
 
 <ul>
-    <?php cochess($cochessArray); ?>
+    <?php cochesLista($cochesListaArray); ?>
 </ul>
 
 </body>
