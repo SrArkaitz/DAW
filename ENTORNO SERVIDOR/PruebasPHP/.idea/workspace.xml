@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb2e278-cc33-45fb-a8e3-eefd1eb91e07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foreach.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foreach2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EjercicioRepaso/Repaso.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EjercicioRepaso/Repaso2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EjercicioRepaso/funciones.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/while.php" beforeDir="false" afterPath="$PROJECT_DIR$/while.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrayConValores.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/arrayConValores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrayMultidimensionales.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/arrayMultidimensionales.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/for.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foreach.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/foreach.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foreach2.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/foreach2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/if.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/if.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prueba2.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/prueba2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/switch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/while.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosBásicos/while.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +47,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EjercicioRepaso" />
+      <recent name="$PROJECT_DIR$/EjerciciosBásicos" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -51,13 +66,13 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.arrayConValores.php">
-    <configuration name="arrayConValores.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/arrayConValores.php" useBuiltInWebServerPort="true">
+    <configuration name="arrayConValores.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/EjerciciosBásicos/arrayConValores.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="prueba2.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/prueba2.php" useBuiltInWebServerPort="true">
+    <configuration name="prueba2.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/EjerciciosBásicos/prueba2.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/index.php">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/EjerciciosBásicos/index.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -81,7 +96,7 @@
       <workItem from="1571305861943" duration="1649000" />
       <workItem from="1571307736057" duration="2533000" />
       <workItem from="1571384055702" duration="4015000" />
-      <workItem from="1571725245728" duration="6829000" />
+      <workItem from="1571725245728" duration="8694000" />
     </task>
     <servers />
   </component>

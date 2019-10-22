@@ -8,7 +8,10 @@
     </style>
 </head>
 <body>
+
+
 <?php
+//Ejercicio 16
 $contactos = array(
     "giogio" => array(
         "nombre" => "Giorno",
@@ -42,7 +45,7 @@ function tablaForEach($array){
     }
 }
 
-
+//Ejercicio 17
 $stands = array("Killer Queen","Sex pistols", "The Fool", "Crazy diamond", "Hierophanto green", "Stray cart", "Za warudo");
 function cochesLista($array)
 {
@@ -52,7 +55,7 @@ function cochesLista($array)
     }
 }
 
-
+//Ejercicio 18
 $musica = array("Dio", "Queen", "Iggy pop", "ACDC", "Red hot chilli peppers", "King Crimson", "Oingo Boingo", "Santana");
 function jojoMusica($array)
 {

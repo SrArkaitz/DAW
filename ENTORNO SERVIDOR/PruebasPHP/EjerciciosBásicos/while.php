@@ -32,7 +32,7 @@ $contactos = array(
 )
 );
 
-
+//13
 function tablaContactos($array){
     $i=0;
     while ($i < count($array)){
