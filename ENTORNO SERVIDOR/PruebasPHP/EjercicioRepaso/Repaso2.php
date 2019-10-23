@@ -13,16 +13,19 @@
 include_once "funciones.php";
 
 
-function($number){
-    for ($i=$number;$i>0; $i--){
+function suma100($number){
 
+    for ($i=$number;$i>0; $i--){
+        if (sonPrimos($i) == 1){
+            echo "<li> {$i} </li>";
+        }
     }
 }
 
 ?>
-
+<p>Primos?</p>
 <ul>
-    <?php suma100(15); ?>
+    <?php suma100(23); ?>
 </ul>
 
 </body>
