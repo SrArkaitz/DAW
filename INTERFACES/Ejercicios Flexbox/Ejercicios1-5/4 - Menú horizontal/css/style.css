@@ -32,6 +32,10 @@ ul.principal {
 
 .menu {
     height: 32px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu a {
@@ -43,21 +47,39 @@ ul.principal {
 }
 .social {
 display: flex;
+margin: 5px;
 }
 
 @media (max-width: 768px) {
-    ul.principal{
-        
+    ul.principal{ 
         flex-wrap: wrap;
+        justify-content: normal;
+        align-content:flex-start;
+    }
+    .menu{
+        flex-basis: 30%;
+        justify-content: center;
+        align-items: normal;
+    }
+    .social{
+        flex-basis: 10%;
     }
 }
 
 @media (max-width: 340px) {
-    ul.principal {
-        flex-direction: column;
+    ul.principal{
+        flex-wrap: wrap;
+        justify-content: normal;
+        align-content:flex-start;
+    }
+    .menu{
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: normal;
     }
     .social{
-        display: flex;
-        
+        flex-basis: 30%;
+        justify-content: center;
+        margin: 0;
     }
 }

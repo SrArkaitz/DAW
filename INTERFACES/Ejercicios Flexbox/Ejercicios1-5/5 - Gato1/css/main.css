@@ -14,6 +14,10 @@ body {
     background-color: lightgray;
     font-family:sans-serif;
     /*Añade aquí las propiedades Flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contenedor */
@@ -31,15 +35,21 @@ main > * {
 ul.principal {
     border-radius: 10px;
     width: 100%;
+    max-width: 1000px;
     padding: 10px;
     background: gray;
     list-style: none;
-    /*Añade aquí las propiedades Flexbox*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .menu {
     height: 32px;
-    /*Añade aquí las propiedades Flexbox*/
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu a {
@@ -49,10 +59,10 @@ ul.principal {
     margin: 0;
     padding: 0;
 }
-
 .social {
-  /*Añade aquí las propiedades Flexbox*/
-}
+    display: flex;
+    margin: 5px;
+}   
 
 #movil {
     background-color: gray;
@@ -97,14 +107,20 @@ ul.principal {
     color: white;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
 #subscribe form {
   /*Añade aquí las propiedades Flexbox*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
 }
 
 #subscribe form > * {
   /*Añade aquí las propiedades Flexbox*/
+  min-width: 35%;
 }
 
 /* Footer */
@@ -120,9 +136,35 @@ footer {
 
 /* Puntos de ruptura */
 @media (max-width: 768px) {
-  /*Añade aquí las propiedades Flexbox*/
+    ul.principal{ 
+        flex-wrap: wrap;
+        justify-content: normal;
+        align-content:flex-start;
+    }
+    .menu{
+        flex-basis: 30%;
+        justify-content: center;
+        align-items: normal;
+    }
+    .social{
+        flex-basis: 10%;
+    }
 }
 
 @media (max-width: 340px) {
-  /*Añade aquí las propiedades Flexbox*/
+  ul.principal{
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-content:flex-start;
+}
+.menu{
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: normal;
+}
+.social{
+    flex-basis: 30%;
+    justify-content: center;
+    margin: 0;
+}
 }

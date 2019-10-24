@@ -38,8 +38,6 @@ function elegir($operacion, $num1, $num2){
         return dividir($num1,$num2);
 }
 
-
-
 ?>
 
 <p><strong>Calculadora:</strong></p>
