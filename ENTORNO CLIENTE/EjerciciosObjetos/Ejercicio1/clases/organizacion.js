@@ -1,0 +1,3 @@
+function Organizacion() {
+    this.nombre;
+}

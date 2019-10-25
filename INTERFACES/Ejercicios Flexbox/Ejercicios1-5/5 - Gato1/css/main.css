@@ -136,6 +136,9 @@ footer {
 
 /* Puntos de ruptura */
 @media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
     ul.principal{ 
         flex-wrap: wrap;
         justify-content: normal;
@@ -148,6 +151,38 @@ footer {
     }
     .social{
         flex-basis: 10%;
+    }
+    form input, #button{
+        padding: 5px;
+    }
+    #button{
+        padding-top: 25px;
+    }
+    #movil  {
+        justify-content: center;
+    }
+    #subscribe form{
+        flex-direction: column;
+    }
+    #subscribe form > * {
+        margin-bottom: 10px;
+        align-self: normal;
+    }
+    #movil{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    #subscribe{
+        order: 1;
+    }
+    #banner{
+        order: 2;
+    }
+    #contenido{
+        order: 3;
+    }
+    footer{
+        order: 4;
     }
 }
 
@@ -166,5 +201,8 @@ footer {
     flex-basis: 30%;
     justify-content: center;
     margin: 0;
+}
+#movil{
+    text-align: center;
 }
 }

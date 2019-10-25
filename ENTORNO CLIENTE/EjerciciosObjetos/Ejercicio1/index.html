@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ejercicio 1</title>
+<script type="text/javascript" src="clases/organizacion.js"></script>
+<script type="text/javascript" src="clases/contactos.js"></script>
+<script src="main.js"></script>
+</head>
+<body onload="mostrar('principal')">
+<div id="Principal">
+    <h1>CONTACTOS</h1>
+    <form>
+        <input type="button" value="Añadir" name="añadir" onclick="mostrar('añadir')">
+        <input type="button" value="Buscar" name="añadir" onclick="mostrar('buscar')">
+    </form>
+</div>
+<div id="añadir">
+<h1>Añadir contacto</h1>
+<div id="falloAñadir"></div>
+<form>
+    <label>Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+    <br/><br/>
+    <label>Organización</label>
+    <input type="text" name="organizacion" id="organizacion">
+    <br/><br/>
+    <label>Móvil</label>
+    <input type="text" name="movil" id="movil">
+    <br/><br/>
+    <input type="button" value="Añadir campo" onclick="">
+    <br/><br/><br/>
+    <input type="button" value="AÑADIR" onclick="añadir()">
+    <input type="button" value="Volver" onclick="mostrar('principal')">
+</form>
+</div>
+<div id="buscar">
+<h1>Buscar contacto</h1>
+<form>
+    <label>Nombre</label>
+    <input type="text" name="nombre" id="nombreB">
+    <br/><br/>
+    <label>Organización</label>
+    <select name="organizacion" id="organizacionB">
+
+    </select>
+    <br/><br/><br/>
+    <input type="button" value="BUSCAR">
+    <input type="button" value="Volver" onclick="mostrar('principal')">
+</form>
+</div>
+</body>
+</html>
