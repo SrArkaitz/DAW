@@ -1,3 +1,5 @@
+let persona;
+
 function mostrar(objeto) {
     let principal = document.getElementById("Principal");
     let añadir = document.getElementById("añadir");
@@ -32,6 +34,7 @@ function añadir() {
     let nombre = document.getElementById("nombre");
     let organizacion = document.getElementById("organizacion");
     let formulario = document.getElementById("formulario");
+    let camposAñadidos = document.getElementById("camposNuevos")
     let movil = document.getElementById("movil");
     let fallo = document.getElementById("falloAñadir")
     let parrafoFallo = document.createElement("p");
@@ -45,35 +48,17 @@ function añadir() {
         if (movil.value != "") {
             if (expRegNombre.exec(nombre.value)) {
                 if (expRegMovil.exec(movil.value)) {
-                    if (organizacion.value != "") {
-                        let obj = new Contactos();
-                        let propiedades = "";
-                        for (let i = 0; i < formulario.children.length; i++) {
-                            if (formulario.children[i].nodeName.toLowerCase() == "input" && formulario.children[i].nodeType == "text") {
-                                if (formulario.children[i] === formulario.lastChild) {
-                                    propiedades += '"' + formulario.children[i - 1].value + '" : "' + formulario.children[i].value
-                                } else {
-                                    alert(formulario.children[i - 1].value)
-                                    propiedades += '"' + formulario.children[i - 1].value + '" : "' + formulario.children[i].value + ", "
-                                }
-                            }
+                    //Creando Objeto
+                    try {
+                        let campos = [];
+                        for (let i = 4; i < camposAñadidos.children.length; i++) {
+                            campos[i-4] = camposAñadidos.children[i].value;   
                         }
-                        obj.persona = {propiedades}
-                    } else {
-                        let obj = new Contactos();
-                        let propiedades = "";
-                        for (let i = 0; i < formulario.children.length; i++) {
-                            if (formulario.children[i].nodeName.toLowerCase() == "input" && formulario.children[i].id != "organizacion" && formulario.children[i].nodeType == "text") {
-                                if (formulario.children[i] === formulario.lastChild) {
-                                    propiedades += '"' + formulario.children[i - 1].value + '" : "' + formulario.children[i].value;
-                                } else {
-                                    alert(formulario.children[i - 1].value)
-                                    propiedades += '"' + formulario.children[i - 1].value + '" : "' + formulario.children[i].value + ", ";
-                                }
-                            }
-                        }
-                        obj.persona = {propiedades}
+                        persona = new Contactos(nombre.value, organizacion.value, movil.value, campos)
+                    } catch (error) {
+                       console.log(error);
                     }
+                        
                 } else {
                     haFallado = true;
                     mensajeFallo = "Fallo en el teléfono, introduzca un número de teléfono correcto";
@@ -100,22 +85,29 @@ function añadir() {
 }
 function añadirCampo(){
     let nombreLabel = prompt("Nombre del campo que desea añadir");
-    let formulario = document.getElementById("formulario");
-    let labelInsertar = document.createElement("label");
-alert(formulario.length)
-    labelInsertar.appendChild = nombreLabel;
-    //document.body.appendChild(labelInsertar)
-    formulario.insertBefore(labelInsertar, formulario.childNodes[formulario.length]);
+    let formulario = document.getElementById("camposNuevos");
+    let pInsertar = document.createElement("p");
+    let labelTexto = document.createTextNode(nombreLabel + ": ")
+    pInsertar.appendChild(labelTexto);
+    formulario.appendChild(pInsertar);
 
     let inputInsertar = document.createElement("input");
-    inputInsertar.nodeType = Text;
-    //document.body.appendChild(inputInsertar)
-    formulario.insertBefore(inputInsertar, formulario.childNodes[formulario.length]);
-    let br = document.createElement("br");
-    formulario.insertBefore(br, formulario.childNodes[formulario.length]);
+    inputInsertar.DOCUMENT_TYPE_NODE  = Text;
+    formulario.appendChild(inputInsertar);
+
+    let br = document.createElement("br")
+    formulario.appendChild(br)
+    formulario.appendChild(br)
+
 }
 
-function buscar(organizacion) {
+function buscar() {
     let nombre = document.getElementById("nombreB");
     let organizacionBuscar = document.getElementById("organizacionB");
+
+    for (let i = 0; i < persona.length; i++) {
+        if (persona[i].nombre.toLowerCase() == nombre.toLowerCase()) {
+            alert("yes")
+        }
+    }
 }

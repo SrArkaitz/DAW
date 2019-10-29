@@ -21,13 +21,14 @@
 <form id="formulario">
     <label>Nombre</label>
     <input type="text" name="nombre" id="nombre">
-    <br/><br/>
+    <!--<br/><br/>-->
     <label>Organización</label>
     <input type="text" name="organizacion" id="organizacion">
-    <br/><br/>
+    <!--<br/><br/>-->
     <label>Móvil</label>
     <input type="text" name="movil" id="movil">
-    <br/><br/>
+    <!--<br/><br/>-->
+    <div id="camposNuevos"></div>
     <input type="button" value="Añadir campo" onclick="añadirCampo()">
     <br/><br/><br/>
     <input type="button" value="AÑADIR" onclick="añadir()">
@@ -45,7 +46,7 @@
 
     </select>
     <br/><br/><br/>
-    <input type="button" value="BUSCAR">
+    <input type="button" value="BUSCAR" onclick="buscar()">
     <input type="button" value="Volver" onclick="mostrar('principal')">
 </form>
 </div>
