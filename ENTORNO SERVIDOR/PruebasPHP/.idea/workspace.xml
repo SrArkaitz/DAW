@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb2e278-cc33-45fb-a8e3-eefd1eb91e07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio5/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio5/referencias.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio5/resultado.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio3.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio5/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio5/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP  7.3" />
   <component name="ProjectId" id="1SHXA94IO9RsuTxkVYFi2YvL96N" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -31,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/Applications/MAMP/bin/php/php7.2.21/bin/php" />
+    <property name="last_opened_file_path" value="/Applications/MAMP/bin/php/php7.3.8/bin/php" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,16 +56,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.arrayConValores.php">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="arrayConValores.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/EjerciciosBásicos/arrayConValores.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="prueba2.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PruebasPHP/EjerciciosBásicos/prueba2.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/EjerciciosBásicos/index.php">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/EjerciciosGETPOST/Ejercicio5/index.php">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.arrayConValores.php" />
+      <item itemvalue="JavaScript Debug.prueba2.php" />
+      <item itemvalue="PHP Script.index.php" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.arrayConValores.php" />
@@ -94,6 +95,8 @@
       <workItem from="1571725245728" duration="8779000" />
       <workItem from="1571823495267" duration="7017000" />
       <workItem from="1571909802835" duration="8059000" />
+      <workItem from="1572333995111" duration="3430000" />
+      <workItem from="1572342575453" duration="1257000" />
     </task>
     <servers />
   </component>

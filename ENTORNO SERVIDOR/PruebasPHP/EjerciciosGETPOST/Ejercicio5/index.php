@@ -1,3 +1,7 @@
+<?php
+//Ejercicio 4
+require_once "referencias.php";
+?>
 <html>
 <head>
     <title>Hola Mundo PHP</title>
@@ -9,8 +13,6 @@
 </head>
 <body>
 <?php
-//Ejercicio 4
-require_once "referencias.php";
 tablaProductos($productos);
 function tablaProductos($array){
     echo "<form action='resultado.php' method='get'>";
@@ -25,21 +27,18 @@ function tablaProductos($array){
             foreach ($array as $key => $value){
 
                 echo "<tr>";
-                //echo "<td>$key</td>";
+                echo "<td>{$value['nombre']}</td>";
                 foreach ($array[$key] as $valor){
                     echo "<td>$valor</td>";
                 }
-                echo"<td><input type='number' name='{$key}' max='10' min='0' step='1' value='0'></td>";
+                echo "<td></td>";
+                //echo"<td><input type='number' name='{$key}' max='10' min='0' step='1' value='0'></td>";
                 echo "</tr>";
             }
         echo "</table>";
             echo "<br/><br/><input type='submit' value='Comprar'>";
             echo "</form>";
 }
-
-
 ?>
-
-
 </body>
 </html>
