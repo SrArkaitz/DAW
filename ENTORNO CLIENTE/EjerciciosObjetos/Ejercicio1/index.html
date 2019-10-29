@@ -19,16 +19,17 @@
 <h1>Añadir contacto</h1>
 <div id="falloAñadir"></div>
 <form id="formulario">
-    <label>Nombre</label>
-    <input type="text" name="nombre" id="nombre">
-    <!--<br/><br/>-->
-    <label>Organización</label>
-    <input type="text" name="organizacion" id="organizacion">
-    <!--<br/><br/>-->
-    <label>Móvil</label>
-    <input type="text" name="movil" id="movil">
-    <!--<br/><br/>-->
-    <div id="camposNuevos"></div>
+    <div id="camposFormulario">
+            <label>Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <br/><br/>
+            <label>Organización</label>
+            <input type="text" name="organizacion" id="organizacion">
+            <br/><br/>
+            <label>Móvil</label>
+            <input type="text" name="movil" id="movil">
+            <br/>
+    </div>
     <input type="button" value="Añadir campo" onclick="añadirCampo()">
     <br/><br/><br/>
     <input type="button" value="AÑADIR" onclick="añadir()">
@@ -43,7 +44,7 @@
     <br/><br/>
     <label>Organización</label>
     <select name="organizacion" id="organizacionB">
-
+        <option value=""></option>
     </select>
     <br/><br/><br/>
     <input type="button" value="BUSCAR" onclick="buscar()">

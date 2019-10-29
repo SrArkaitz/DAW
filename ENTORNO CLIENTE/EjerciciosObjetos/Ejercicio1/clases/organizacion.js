@@ -1,3 +1,3 @@
-function Organizacion() {
-    this.nombre;
+function Organizacion(nombre) {
+    this.nombre = nombre;
 }
