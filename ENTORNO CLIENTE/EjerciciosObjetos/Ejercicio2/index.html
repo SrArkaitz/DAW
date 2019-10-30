@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ejercicio 1</title>
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="inicio()">
+    <h1>ALTA DE LIBROS</h1>
+    <form>
+        <label>Título</label>
+        <input type="text" id="titulo">
+        <br/><br/>
+        <label>Tipo</label>
+        <select id="tipo" onchange="comprobarAñadir()">
+
+        </select>
+        <br/><br/><br/>
+        <h2>AUTOR</h2>
+        <label>DNI</label>
+        <input type="text" id="dni">
+        <br/><br/>
+        <label>Nombre y apellidos</label>
+        <input type="text" id="nombre">
+        <br/><br/>
+        <input type="button" value="Añadir autor">
+        <br/><br/><br/>
+        <label>Número de ejemplares</label>
+        <input type="number" step="1" min="0" value="0" id="ejemplares"><br/><br/>
+        <label>Displonible</label>
+        <input type="radio" name="gender" value="si">Si
+        <input type="radio" name="gender" value="no">No<br/><br/>
+        <label>Fecha a partir de la cual estará displonible:</label>
+        <input type="date" id="fecha">
+        <br/><br/><br/>
+        <input type="button" value="Enviar">
+        
+    </form>
+</body>
+</html>

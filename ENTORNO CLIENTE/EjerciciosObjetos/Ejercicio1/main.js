@@ -70,30 +70,36 @@ function añadir() {
 
                     }
                     if (existeUsuario == false) {
-
-
                         try {
-                            for (let i = 4; i < contador; i++) {
-                                campos[i - 4] = document.getElementById("campo" + i).value;
-                            }
-                            contactos[numPersona] = new Contactos(nombre.value, organizacion.value, movil.value, campos);
-                            numPersona++;
-
-                            //guardar organizacion
                             try {
-                                if (organizacion.value != "") {
-                                    let hayOrganizacion = false;
-                                    for (let x = 0; x < organizaciones.length; x++) {
-                                        if (organizaciones[x].nombre == organizacion.value) {
-                                            hayOrganizacion = true
+                                for (let i = 4; i < contador; i++) {
+                                    campos[i - 4] = document.getElementById("campo" + i).value;
+                                }
+                                contactos[numPersona] = new Contactos(nombre.value, organizacion.value, movil.value, campos);
+                                numPersona++;
+    
+                                //guardar organizacion
+                                try {
+                                    if (organizacion.value != "") {
+                                        let hayOrganizacion = false;
+                                        for (let x = 0; x < organizaciones.length; x++) {
+                                            if (organizaciones[x].nombre == organizacion.value) {
+                                                hayOrganizacion = true
+                                            }
+                                        }
+                                        if (hayOrganizacion == false) {
+                                            alert(organizacion.value)
+                                            organizaciones[numOrg] = new Organizacion(organizacion.value);
+                                            numOrg++;
                                         }
                                     }
-                                    if (hayOrganizacion == false) {
-                                        alert(organizacion.value)
-                                        organizaciones[numOrg] = new Organizacion(organizacion.value);
-                                        numOrg++;
-                                    }
-                                }
+                                    alert("Se ha guardado el contacto correctamente")
+                        } catch (error) {
+                           alert() 
+                        }
+
+                        
+                                vaciarInput();
                             } catch (error) {
                                 alert("No se pudo guardar la organización");
                                 vaciarInput();
@@ -104,7 +110,7 @@ function añadir() {
                             alert("Lo sentimos, no se pudo agregar el contacto");
                             vaciarInput();
                         }
-                    }else{
+                    } else {
                         alert("El usuario ya existe");
                         vaciarInput();
                     }
@@ -164,21 +170,39 @@ function agregarOrganizaciones() {
     }
 }
 
-function buscar(organizacion) {
+function buscar() {
     let nombreBuscar = document.getElementById("nombreB").value;
     let organizacionBuscar = document.getElementById("organizacionB").value;
-    try {
-        for (let i = 0; i < contactos.length; i++) {
-            if (contactos[i].nombre == nombreBuscar && contactos[i].organizacion == organizacionBuscar) {
-                alert("El número de teléfono de " + contactos[i].nombre + " es: " + contactos[i].movil);
+    if (nombreBuscar != "") {
+        try {
+            for (let i = 0; i < contactos.length; i++) {
+                if (contactos[i].nombre == nombreBuscar && contactos[i].organizacion == organizacionBuscar) {
+                    alert("El número de teléfono de " + contactos[i].nombre + " es: " + contactos[i].movil);
+                }
             }
+            vaciarInput()
+        } catch (error) {
+            alert("No se ha encontrado contacto")
         }
-    } catch (error) {
-        alert("No se ha encontrado contacto")
-    }
+    } else if (nombreBuscar == "" && organizacionBuscar != "") {
+        let msj = "Los contactos en esa organización son: ";
+        try {
+            
+            for (let i = 0; i < contactos.length; i++) {
+                if (contactos[i].organizacion == organizacionBuscar) {
+                    msj += contactos[i].nombre + " ";
+                }
+            }
+            alert(msj);
+        } catch (error) {
+            alert("Estamos teniendo problemas con la base de datos. Intentelo más tarde.")
+        }
 
+    } else {
+        alert("Por favor rellene algun dato para buscar")
+    }
 }
-function vaciarInput(){
+function vaciarInput() {
     document.getElementById("nombre").value = "";
     document.getElementById("nombreB").value = "";
     document.getElementById("movil").value = "";
