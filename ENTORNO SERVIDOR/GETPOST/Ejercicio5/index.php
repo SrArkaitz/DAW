@@ -18,26 +18,25 @@ function tablaProductos($array){
     echo "<form action='resultado.php' method='get'>";
         echo "<table>
                 <tr>
-                    <!--<th>Código</th>-->
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Precio</th>
                     <th>Cantidad</th>
                 </tr>";
             foreach ($array as $key => $value){
-
-                echo "<tr>";
-                echo "<td>{$value['nombre']}</td>";
-                foreach ($array[$key] as $valor){
-                    echo "<td>$valor</td>";
-                }
-                echo "<td></td>";
-                //echo"<td><input type='number' name='{$key}' max='10' min='0' step='1' value='0'></td>";
-                echo "</tr>";
+                crearFilaProducto($key, $value);
             }
         echo "</table>";
             echo "<br/><br/><input type='submit' value='Comprar'>";
             echo "</form>";
+}
+function crearFilaProducto($id, $producto) {
+    echo "<tr>
+            <td>{$producto['nombre']}</td>
+            <td>{$producto['descripcion']}</td>
+            <td>{$producto['precio']}</td>
+            <td><input type='number' name='{$id}' value='0' min='0' step='1' required></td>
+        </tr>";
 }
 ?>
 </body>
