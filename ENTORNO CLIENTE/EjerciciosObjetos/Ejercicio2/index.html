@@ -17,13 +17,17 @@
         </select>
         <br/><br/><br/>
         <h2>AUTOR</h2>
-        <label>DNI</label>
-        <input type="text" id="dni">
+        
+        
+        <div id="autores">
+            <label>DNI</label>
+            <input type="text" id="dni">
+            <br/><br/>
+            <label>Nombre y apellidos</label>
+            <input type="text" id="nombre">
+        </div>
         <br/><br/>
-        <label>Nombre y apellidos</label>
-        <input type="text" id="nombre">
-        <br/><br/>
-        <input type="button" value="Añadir autor">
+        <input type="button" value="Añadir autor" onclick="añadirAutor()">
         <br/><br/><br/>
         <label>Número de ejemplares</label>
         <input type="number" step="1" min="0" value="0" id="ejemplares"><br/><br/>
@@ -33,7 +37,7 @@
         <label>Fecha a partir de la cual estará displonible:</label>
         <input type="date" id="fecha">
         <br/><br/><br/>
-        <input type="button" value="Enviar">
+        <input type="button" value="Enviar" onclick="enviar()">
         
     </form>
 </body>

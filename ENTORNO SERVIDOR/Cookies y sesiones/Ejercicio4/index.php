@@ -12,9 +12,9 @@ if (!isset($contador)){
     $_SESSION["contador"] = 0;
 }
 
-
-
-
+function aumentarContador(){
+    $_SESSION["contador"]++;
+}
 
 function añadirPersonas($contador){
 
@@ -29,12 +29,12 @@ function añadirPersonas($contador){
 
 function guardarPersonaSesion($nombreSesion,$persona, $contador){
     $_SESSION[$nombreSesion . $contador] = $persona;
-
+    aumentarContador();
 }
 
 if (isset($_GET["persona"])){
     guardarPersonaSesion("persona", $_GET["persona"], $_SESSION["contador"] );
-    $_SESSION["contador"]++;
+    
 }
 
 
