@@ -32,12 +32,15 @@ function guardarPersonaSesion($nombreSesion,$persona, $contador){
     aumentarContador();
 }
 
+function borrarSesion(){
+    session_unset();
+    $_SESSION["contador"] = 0;
+}
+
 if (isset($_GET["persona"])){
     guardarPersonaSesion("persona", $_GET["persona"], $_SESSION["contador"] );
     
 }
-
-
 ?>
 
 <ul>
@@ -49,7 +52,7 @@ if (isset($_GET["persona"])){
     <input type="text" name="persona">
     <input type="submit" value="Añadir">
 </form>
-
+<input type="button" onclick="<?php borrarSesion() ?>">
 <p><?php echo $_SESSION["contador"] ?></p>
 </body>
 </html>

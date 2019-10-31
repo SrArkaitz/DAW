@@ -2,3 +2,34 @@
 /**
 	* CSS Flexible Layout Module - Caja Flexible -
 */
+#viajes{
+	display: flex;
+}
+.uno{
+	background: lightblue;
+}
+.dos{
+	background: lightseagreen;
+}
+.tres{
+	background: lightskyblue;
+}
+.viajes-item{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.viajes-item img{
+	order: 1;
+	align-self: center;
+}
+.viajes-item h2{
+	order: 2;
+}
+.viajes-item p{
+	order: 3;
+}
+.viajes-item button{
+	align-self: center;
+	order: 4;
+}
