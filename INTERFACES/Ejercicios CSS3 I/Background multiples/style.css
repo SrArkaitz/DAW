@@ -1,0 +1,9 @@
+body {
+
+    background-image:  url(ribbon.png), url(decoration.png), url(old_paper.jpg);
+    background-repeat: no-repeat;
+    background-position: center, bottom right, top left;
+}
+p {
+	        
+}

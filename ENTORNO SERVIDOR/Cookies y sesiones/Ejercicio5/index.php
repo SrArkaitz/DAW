@@ -26,8 +26,16 @@ $users = array(
         "contraseña" => "1234"
     )
 );
+$_SESSION["burrito"] = "1234";
+$_SESSION["jasperoide1"] = "1212";
+$_SESSION["aaa"] = "aaa";
 function comprobarUsuario($user, $password, $array){
-    foreach ($array as $key => $value){
+
+    if ($_SESSION[$user] == $password){
+        $_SESSION["mensaje"] = "Bienvenido ".$user;
+        header("Location: logged.php");
+    }
+    /*foreach ($array as $key => $value){
         if ($key == $user){
             if ($array[$key]["contraseña"] == $password){
 
@@ -36,7 +44,7 @@ function comprobarUsuario($user, $password, $array){
 
             }
         }
-    }
+    }*/
 }
 if (isset($_GET["user"]) && isset($_GET["password"])){
     comprobarUsuario($_GET["user"], $_GET["password"], $users);

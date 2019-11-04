@@ -26,20 +26,30 @@ $users = array(
         "contraseña" => "1234"
     )
 );
+
+$_SESSION["burrito"] = "1234";
+$_SESSION["jasperoide1"] = "1212";
+$_SESSION["aaa"] = "aaa";
+
+
 function comprobarUsuario($user, $password, $array){
-    foreach ($array as $key => $value){
-        if ($key == $user){
-            if ($array[$key]["contraseña"] == $password){
-
-                $_SESSION["mensaje"] = "Bienvenido ".$array[$key]["nombre"];
-                header("Location: logged.php");
-
-            }
-        }
+    if ($_SESSION[$user] == $password){
+        $_SESSION["mensaje"] = "Bienvenido ".$user;
+        header("Location: logged.php");
     }
 }
 if (isset($_GET["user"]) && isset($_GET["password"])){
-    comprobarUsuario($_GET["user"], $_GET["password"], $users);
+    if (isset($_SESSION[$_GET["user"] . "fallos"])){
+        if ($_SESSION[$_GET["user"] . "fallos"] > 3){
+            echo "<p>No se puede acceder a la página debido al número de fallo</p>";
+        }else{
+            comprobarUsuario($_GET["user"], $_GET["password"], $users);
+            $_SESSION[$_GET["user"] . "fallos"]++;
+        }
+    }else{
+        $_SESSION[$_GET["user"] . "fallos"] = 0;
+    }
+
 }
 ?>
 

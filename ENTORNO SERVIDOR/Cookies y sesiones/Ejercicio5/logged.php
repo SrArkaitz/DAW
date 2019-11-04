@@ -10,14 +10,18 @@
 session_start();
 
 function borrarSesionYVolver(){
-    session_unset();
-    header("Location: index.php");
+    unset($_SESSION[ "mensaje"]);
+
 }
 
 ?>
 
 <p><?php echo $_SESSION["mensaje"] ?></p>
 
+
+<form action="index.php" method="get">
+<input type="submit" value="Volver" <?php borrarSesionYVolver(); ?>">
+</form>
 
 </body>
 </html>

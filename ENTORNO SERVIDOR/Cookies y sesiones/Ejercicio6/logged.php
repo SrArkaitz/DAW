@@ -10,8 +10,7 @@
 session_start();
 
 function borrarSesionYVolver(){
-    session_unset();
-
+    unset($_SESSION[ "mensaje"]);
 }
 
 ?>

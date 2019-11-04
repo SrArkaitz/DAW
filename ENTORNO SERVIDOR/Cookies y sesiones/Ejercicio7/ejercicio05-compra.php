@@ -1,15 +1,17 @@
 <?php
+session_start();
+$_SESSION["total"]= 0;
 require_once 'ejercicio05-datos.php';
 
 /*** FUNCIONES ***/
 function calcularImporte($productos){
-    $total = 0;
+
     foreach ($productos as $id => $producto){
         if (isset($_GET[$id])) {
-            $total = $total + $producto["precio"]*$_GET[$id];
+            $_SESSION["total"] +=  $producto["precio"]*$_GET[$id];
         }
     }
-    return $total;
+    return $_SESSION["total"];
 }
 
 function imprimirDetalle($productos) {
