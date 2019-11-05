@@ -39,15 +39,15 @@ function comprobarUsuario($user, $password, $array){
     }
 }
 if (isset($_GET["user"]) && isset($_GET["password"])){
-    if (isset($_SESSION[$_GET["user"] . "fallos"])){
-        if ($_SESSION[$_GET["user"] . "fallos"] > 3){
+    if (isset($_SESSION["fallos"])){
+        if ($_SESSION["fallos"] > 3){
             echo "<p>No se puede acceder a la página debido al número de fallo</p>";
         }else{
             comprobarUsuario($_GET["user"], $_GET["password"], $users);
-            $_SESSION[$_GET["user"] . "fallos"]++;
+            $_SESSION["fallos"] = $_SESSION[ "fallos"] + 1;
         }
     }else{
-        $_SESSION[$_GET["user"] . "fallos"] = 0;
+        $_SESSION["fallos"] = 0;
     }
 
 }

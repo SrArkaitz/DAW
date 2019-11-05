@@ -10,7 +10,7 @@
 session_start();
 
 function borrarSesionYVolver(){
-    unset($_SESSION[ "mensaje"]);
+    unset($_SESSION[ "logged"]);
 
 }
 

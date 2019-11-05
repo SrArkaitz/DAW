@@ -29,10 +29,12 @@ $users = array(
 $_SESSION["burrito"] = "1234";
 $_SESSION["jasperoide1"] = "1212";
 $_SESSION["aaa"] = "aaa";
+$_SESSION["logged"] = "no";
 function comprobarUsuario($user, $password, $array){
 
     if ($_SESSION[$user] == $password){
         $_SESSION["mensaje"] = "Bienvenido ".$user;
+        $_SESSION["logged"] = "yes";
         header("Location: logged.php");
     }
     /*foreach ($array as $key => $value){
@@ -45,6 +47,10 @@ function comprobarUsuario($user, $password, $array){
             }
         }
     }*/
+}
+echo $_SESSION["logged"];
+if ($_SESSION["logged"] == "yes"){
+    header("Location: logged.php");
 }
 if (isset($_GET["user"]) && isset($_GET["password"])){
     comprobarUsuario($_GET["user"], $_GET["password"], $users);

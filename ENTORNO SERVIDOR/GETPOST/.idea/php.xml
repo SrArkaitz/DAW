@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="ff064826-c427-4b49-bfbf-e8d0fec864d2" name="Remote PHP 7.2" home="vagrant://DATA" debugger_id="php.debugger.XDebug">
+      <interpreter id="ee39249f-0ca8-46a0-ab64-d921555c2b76" name="Remote PHP 7.2" home="vagrant://DATA" debugger_id="php.debugger.XDebug">
         <remote_data VAGRANT_FOLDER="$PROJECT_DIR$" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/vagrant/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" />
       </interpreter>
     </interpreters>
