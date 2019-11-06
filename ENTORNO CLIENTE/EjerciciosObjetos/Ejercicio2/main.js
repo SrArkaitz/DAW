@@ -1,7 +1,11 @@
 let tipos = ["Ciencia ficción", "Drama", "Terror", "Policial", "Aventura", "Comedia", "Accion", "Romance", "Biografia", "Añadir tipo"] //Se cogerian de la base de datos pero al no haber pongo un array...
 let contador = 1;
-
+let contactosAñadidos = 0;
+let contadorLibros= 0;
 let autores = [];
+let libros = [];
+let autoresLibro = [];
+
 /**
  * Función que iniciará todas las funciones que se ejecutarán al principio
  */
@@ -35,46 +39,81 @@ function comprobarAñadir() {
 
 function enviar() {
     let titulo = document.getElementById("titulo").value;
-    let isbn = document.getElementById("element").value;
+    let isbn = document.getElementById("isbn").value;
     let tipo = document.getElementById("tipo").value;
     let existeAutor = false;
-    let autoresTitulo = [];
-    let autoresDiv = document.getElementById("autores");
-    let dni = document.getElementById("dni").value;
-    let nombre = document.getElementById("nombre").value;
+    
+    //let autoresDiv = document.getElementById("autores");
+    let dni = document.getElementById("dni0").value;
+    let nombre = document.getElementById("nombre0").value;
     let ejemplares = document.getElementById("ejemplares").value;
     let dis1 = document.getElementById("dis1").checked;
     let dis2 = document.getElementById("dis2").checked;
+    let disponible;
+    let fecha;
     let expRIsbn = /ISBN\x20(?=.{13}$)\d{1,5}([- ])\d{1,7}\1\d{1,6}\1(\d|X)$/
+    let posicionAutor;
     if (titulo != "") {
         if (isbn != "" || expRIsbn.exec(isbn)) {
-            if (tipo == "Añadir tipo") {
+            if (tipo != "Añadir tipo") {
 
                 //AñadirAutor
                 if (dni != "" && nombre != "") {
-                    for (let i = 0; i < autoresDiv.children; i++) {
-                        if (autoresDiv.children[i].nodeType == "input") {
-                            alert("Es input")
-                            existeAutor = false;
-                            for (let x = 0; x < autores.length; x++) {
-                                if (autoresDiv.children[i] == autores[x]) {
-                                    existeAutor = true;
+                    try {
+                        existeAutor = false;
+                        for (let x = 0; x < autores.length; x++) {
+
+                            if (dni == autores[x].dni && nombre == autores[x].nombre) {
+                                existeAutor = true;
+                                posicionAutor = x;
+                            }
+                        }
+                        if (existeAutor == false) {
+                            //Si no existe lo añadimos como objeto al array de autores y lo añadimos al array que luego añadiremos al objeto libro
+                            autores[contactosAñadidos] = new Autor(nombre, dni);
+                            contactosAñadidos++;
+                            autoresLibro[autoresLibro.length] = autores[autores.length];
+                            alert("El autor se ha añadido correctamente")
+                            masAutores();
+                        } else {
+                            //Si existe lo buscamos en el array lo añadimos directamente
+                            autoresLibro[autoresLibro.length] = autores[posicionAutor];
+                            alert("El autor se ha añadido correctamente")
+                            masAutores();
+                        }
+                    } catch (error) {
+                        alert("No se ha podido añadir al autor");
+                    }
+                    if (ejemplares != "") {
+                        if (dis1 != false || dis2 != false) {
+                            if (dis1 == true) {
+                                disponible = true;
+                                fecha = new Date();
+                                try {
+                                    libros[contadorLibros] = new Libro(titulo, isbn, tipo, ejemplares, disponible, fecha, autoresLibro)
+                                    libros[contadorLibros].setAutores(autoresLibro);
+                                    contadorLibros++;
+                                } catch (error) {
+                                    alert("No se pudo añadir el libro")
+                                }
+                            }else{
+                                disponible = false;
+                                fecha = document.getElementById("fecha").value;
+                                try {
+                                    libros[contadorLibros] = new Libro(titulo, isbn, tipo, ejemplares, disponible, fecha)
+                                    libros[contadorLibros].setAutores(autoresLibro);
+                                    contadorLibros++;
+                                    alert("El libro se ha añadido correctamente")
+                                } catch (error) {
+                                    alert("No se pudo añadir el libro")
                                 }
                             }
-                            if (existeAutor == false) {
-                                //Si no existe lo añadimos como objeto al array de autores y lo añadimos al array que luego añadiremos al
-                                //autores[autores.length] = new Autor();
-                            }else{
-                                //Si existe lo buscamos en el array lo añadimos directamente
-                            }
-                            if (dis1 == false && dis2 == false) {
-                                //Disponibilidad
-                            }else{
-                                alert("Por favor, seleccione la disponibilidad")
-                            }
-                            
+                        } else {
+                            alert("Por favor, seleccione la disponibilidad")
                         }
-                    }
+                    }else{
+                        alert("Por favor, rellene el número de ejemplares");
+                    }     
                 }
             } else {
                 alert("Por favor, seleccione un tipo válido");
@@ -107,4 +146,39 @@ function añadirAutor() {
     autores.appendChild(label2);
     autores.appendChild(input2);
     contador++;
+}
+function masAutores(){
+    let contadorAutores = 1;
+    
+    let nombre;
+    let dni;
+    while (document.getElementById("dni"+contadorAutores)) {
+        nombre = document.getElementById("nombre"+contadorAutores).value
+        dni = document.getElementById("dni"+contadorAutores).value
+
+        try {
+            let existeAutor = false;
+            for (let x = 0; x < autores.length; x++) {
+
+                if (dni == autores[x].dni && nombre == autores[x].nombre) {
+                    existeAutor = true;
+                    let posicionAutor = x;
+                }
+            }
+            if (existeAutor == false) {
+                //Si no existe lo añadimos como objeto al array de autores y lo añadimos al array que luego añadiremos al objeto libro
+                autores[contactosAñadidos] = new Autor(nombre, dni);
+                contactosAñadidos++;
+                autoresLibro[autoresLibro.length] = autores[autores.length];
+                alert("El autor se ha añadido correctamente")
+            } else {
+                //Si existe lo buscamos en el array lo añadimos directamente
+                autoresLibro[autoresLibro.length] = autores[posicionAutor];
+                alert("El autor se ha añadido correctamente")
+            }
+        } catch (error) {
+            alert("No se ha podido añadir todos los autores");
+        }
+        contadorAutores++;
+    }
 }

@@ -1,0 +1,32 @@
+div{
+    width: 200px;
+    height: 100px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class$="a"]{  
+    border-bottom-right-radius: 50px 100px;
+}
+div[class$="b"]{  
+    border-bottom-right-radius: 100px 50px;
+}
+div[class$="c"]{  
+    border-bottom-right-radius: 100px 50px;
+}
+div[class$="d"]{  
+    border-bottom-right-radius: 100px 50px;
+}
+div[class$="e"]{  
+    border-bottom-right-radius: 100px 50px;
+}
+div[class$="f"]{  
+    border-radius: 200px;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+}

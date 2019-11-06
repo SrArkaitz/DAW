@@ -13,9 +13,7 @@ require_once "referencias.php";
 </head>
 <body>
 <?php
-function añadirfila(){
 
-};
 
 tablaProductos($productos);
 function tablaProductos($array){

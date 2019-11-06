@@ -5,5 +5,12 @@ function Libro(titulo, isbn, tipo, ejemplares, disponible, fecha){
     this.ejemplares = ejemplares,
     this.disponible = disponible,
     this.fecha = fecha,
-    this.autor = []
+    this.autores = []
 }
+
+
+Libro.prototype.setAutores = function(autores) {
+    this.autores = autores;
+}
+
+
