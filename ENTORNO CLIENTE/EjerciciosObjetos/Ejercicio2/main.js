@@ -99,7 +99,7 @@ function enviar() {
                                     try {
                                         libros[contadorLibros] = new Libro(titulo, isbn, tipo, ejemplares, disponible, fecha, autoresLibro)
                                         libros[contadorLibros].setAutores(autoresLibro);
-                                        alert("Se ha añadido el libro correctamente")
+                                        alert("Se ha añadido el libro correctamente")   
                                         contadorLibros++;
                                     } catch (error) {
                                         alert("No se pudo añadir el libro")
