@@ -1,0 +1,11 @@
+{
+    "name": "vendor/dw17-jobeet-ev1-init",
+    "description": "Description of project dw17_Jobeet_Ev1_Init.",
+    "authors": [
+        {
+            "name": "aarka",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {"google/apiclient": "1.1.*"}
+}

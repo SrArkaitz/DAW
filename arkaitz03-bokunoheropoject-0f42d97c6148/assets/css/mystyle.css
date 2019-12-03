@@ -1,0 +1,22 @@
+@font-face {
+  font-family: NuevaLetra;
+  src: url("../fonts/Futura Display BQ Regular.otf"); }
+p {
+  font-family: sans-serif; }
+
+h1 {
+  font-family: NuevaLetra; }
+
+img{
+                width: 400px;
+                height: 600px
+            }
+            .imgMini{
+                width: 120px;
+                height: 65px;
+            }
+            .imgGrande{
+                width: 600px;
+                height: 400px;
+            }
+/*# sourceMappingURL=mystyle.css.map */
