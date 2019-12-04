@@ -1,8 +1,5 @@
 <?php
-
-
-namespace Models2;
-
+namespace Models;
 
 class Triangulo extends Poligono
 {

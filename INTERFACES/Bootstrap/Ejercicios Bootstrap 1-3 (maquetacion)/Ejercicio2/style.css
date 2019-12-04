@@ -1,0 +1,27 @@
+.header, .footer {
+	background: green;
+	border: 1px solid #FFF;
+}
+body{
+	text-align: center;
+	color:#FFF;
+}
+.aside {
+	background: red;
+	border: 1px solid #FFF;
+}
+
+.morado {
+	background: purple;
+	border: 1px solid #FFF;
+}
+
+.naranja {
+	background: orange;
+	border: 1px solid #FFF;
+}
+
+.azul {
+	background: blue;
+	border: 1px solid #FFF;
+}

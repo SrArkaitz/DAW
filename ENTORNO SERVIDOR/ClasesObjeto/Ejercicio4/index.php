@@ -1,10 +1,9 @@
 <?php
-include_once("Models2/Poligono.php");
-include_once("Models2/Cuadrado.php");
-include_once("Models2/Triangulo.php");
-use Models2\Poligono;
-use Models2\Cuadrado;
-use Models2\Triangulo;
+include_once("Models/Poligono.php");
+include_once("Models/Cuadrado.php");
+include_once("Models/Triangulo.php");
+
+use Models\Cuadrado;
 
 
 echo "<h1>Hola mundo</h1>";
@@ -17,7 +16,7 @@ $cuadrado->setAnchura(2);
 
 $cuadrado->area();
 echo "<br>";
-$triangulo = new Triangulo();
+$triangulo = new Models\Triangulo();
 
 $triangulo->setColor("Azul");
 $triangulo->setAltura(2);
