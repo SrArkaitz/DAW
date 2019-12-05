@@ -1,0 +1,8 @@
+{
+    "name": "vagrant/ejercicio1",
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/php-timer": "^2.1"
+    }
+}
