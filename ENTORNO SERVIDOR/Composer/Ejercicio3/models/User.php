@@ -1,9 +1,8 @@
 <?php
+namespace models;
 require 'vendor/autoload.php';
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
-$this->log = new Logger('Paciente');
-$this->log->pushHandler(new StreamHandler('app.log', Logger::WARNING));
 abstract class User
 {
     protected $username, $nombre, $apellidos, $email, $password, $ultimoAcceso, $log;
@@ -15,16 +14,18 @@ abstract class User
         $this->apellidos = $apellidos;
         $this->email = $email;
         $this->password = $password;
+        $this->log = new Logger('User');
+        $this->log->pushHandler(new StreamHandler('app.log', Logger::WARNING));
     }
 
     abstract function showAction();
 
     function login(){
-        $this->log->error('El usuario ' . $this->username . ' se está loggeando');
+        $this->log->warning('El usuario ' . $this->username . ' se está loggeando');
     }
 
     function logout(){
-        $this->log->error('El usuario ' . $this->username . ' se está haciendo logout');
+        $this->log->warning('El usuario ' . $this->username . ' se está haciendo logout');
     }
 
     public function getUsername()
@@ -82,9 +83,9 @@ abstract class User
         return $this->ultimoAcceso;
     }
 
-    public function setUltimoAcceso($ultimoAcceso): void
+    public function setUltimoAcceso(): void
     {
-        $this->ultimoAcceso = $ultimoAcceso;
+        $this->ultimoAcceso = date("Y-m-d h:i:sa");
     }
 
 

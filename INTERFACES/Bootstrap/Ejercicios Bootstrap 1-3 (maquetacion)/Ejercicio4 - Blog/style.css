@@ -5,45 +5,37 @@
 body{
 	text-align: center;
 	color:#FFF;
+	display: flex;
+
+	align-items: center
 }
 #nave{
 	background-color: #e3f2fd;
 }
-.uno, .dos, .tres {
-	background: red;
-	border: 1px solid #FFF;
-}
 .footer{
-	background: purple;
-	border: 1px solid #FFF;
+	background: gray;
+}
+.cuerpoPag{
+	background-color: violet;
+}
+.articulos{
+	background-color: greenyellow;
+}
+
+.paginacion{
+	background-color: yellow;
+}
+.lateral{
+	background-color: red;
+}
+.jumbo{
+	color: black;
+	background-color: coral;
 }
 
 @media only screen and (max-width: 575px){
-	.dos{
-		background-color: blue;
-	}
-	.tres{
-		text-align: right;
-	}
-	.uno{
-		text-align: left;
-	}
-	.header{
-		background-color: blanchedalmond; 
-	}
+
 }
 @media only screen and (max-width: 765px) and (min-width: 575px){
-	.tres{
-		background-color: antiquewhite
-	}
-	.uno{
-		text-align: left;
-	}
-	.dos{
-		text-align: right;
-	}
-	.header{
-		background-color: coral;
-	}
 	
 }
