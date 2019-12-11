@@ -8,7 +8,7 @@
     </style>
 </head>
 <body>
-    <h1>Listado de zapatillas de la tienda {{$empresa}}</h1>
+    @include('tienda', ['empresa' => $empresa] )
     <table>
         <tr>
             <td>Marca</td>

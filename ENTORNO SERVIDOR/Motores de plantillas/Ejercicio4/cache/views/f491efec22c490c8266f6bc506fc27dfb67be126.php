@@ -8,7 +8,7 @@
     </style>
 </head>
 <body>
-    <h1>Listado de zapatillas de la tienda <?php echo e($empresa); ?></h1>
+    <?php echo $__env->make('tienda', ['empresa' => $empresa] , \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <table>
         <tr>
             <td>Marca</td>
