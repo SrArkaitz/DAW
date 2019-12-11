@@ -10,7 +10,6 @@
     </style>
 </head>
 <body>
-    <h1>@yield("tienda")</h1>
     @yield("zapas")
 </body>
 </html>

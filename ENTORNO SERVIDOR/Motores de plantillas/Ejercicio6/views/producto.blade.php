@@ -1,6 +1,8 @@
 @extends("layouts.layout")
 
 @section("zapas")
+
+    @include('tienda', ['empresa' => $empresa] )
     <table>
         <tr>
             <td>Marca</td>
@@ -11,11 +13,11 @@
             <td>volver</td>
         </tr>
         <tr>
-            <td>{{$zapa->marca}}</td>
-            <td>{{$zapa->modelo}}</td>
-            <td>{{$zapa->tipo}}</td>
-            <td>{{$zapa->precio}}</td>
-            <td>{{$zapa->id}}</td>
+            <td>{{$zapa->getMarca()}}</td>
+            <td>{{$zapa->getModelo()}}</td>
+            <td>{{$zapa->getTipo()}}</td>
+            <td>{{$zapa->getPrecio()}}</td>
+            <td>{{$zapa->getId()}}</td>
             <td><a href="index.php">Volver</a></td>
         </tr>
     </table>

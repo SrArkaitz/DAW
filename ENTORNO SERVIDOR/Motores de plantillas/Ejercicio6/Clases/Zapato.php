@@ -4,7 +4,7 @@ namespace Clases;
 class Zapato
 {
 
-    public $marca, $modelo, $tipo, $precio, $id;
+    private $marca, $modelo, $tipo, $precio, $id;
     private static $cantidad = 0;
     public function __construct($marca, $modelo, $tipo, $precio)
     {
@@ -15,13 +15,29 @@ class Zapato
         $this->id = self::$cantidad;
         self::$cantidad++;
     }
-    public function getArray(){
-        return array(
-          'Marca' => $this->marca,
-          'Modelo' => $this->modelo,
-           'Tipo' => $this->tipo,
-            'Precio' => $this->precio
-        );
+
+    public function getMarca()
+    {
+        return $this->marca;
     }
 
+    public function getModelo()
+    {
+        return $this->modelo;
+    }
+
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    public function getPrecio()
+    {
+        return $this->precio;
+    }
+
+    public function getId(): int
+    {
+        return $this->id;
+    }
 }

@@ -4,7 +4,7 @@ namespace Clases;
 class Zapato
 {
 
-    public $marca, $modelo, $tipo, $precio;
+    private $marca, $modelo, $tipo, $precio;
 
     public function __construct($marca, $modelo, $tipo, $precio)
     {
@@ -22,5 +22,39 @@ class Zapato
             'Precio' => $this->precio
         );
     }
+
+    /**
+     * @return mixed
+     */
+    public function getMarca()
+    {
+        return $this->marca;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getModelo()
+    {
+        return $this->modelo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrecio()
+    {
+        return $this->precio;
+    }
+
+
 
 }

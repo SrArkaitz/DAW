@@ -10,7 +10,6 @@
     </style>
 </head>
 <body>
-    <?php echo $__env->yieldContent("tienda"); ?>
     <?php echo $__env->yieldContent("zapas"); ?>
 </body>
 </html><?php /**PATH /vagrant/Motores de plantillas/Ejercicio6/views/layouts/layout.blade.php ENDPATH**/ ?>

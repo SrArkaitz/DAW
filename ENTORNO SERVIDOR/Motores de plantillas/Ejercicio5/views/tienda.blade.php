@@ -1,5 +1,1 @@
-@extends("layouts.layout")
-
-@section("tienda")
-    <h1>Listado de zapatillas de la tienda {{$empresa}}</h1>
-@endsection
+<h1>Listado de zapatillas de la tienda {{$empresa}}</h1>

@@ -9,11 +9,11 @@
             <td>volver</td>
         </tr>
         <tr>
-            <td><?php echo e($zapa->marca); ?></td>
-            <td><?php echo e($zapa->modelo); ?></td>
-            <td><?php echo e($zapa->tipo); ?></td>
-            <td><?php echo e($zapa->precio); ?></td>
-            <td><?php echo e($zapa->id); ?></td>
+            <td><?php echo e($zapa->getMarca()); ?></td>
+            <td><?php echo e($zapa->getModelo()); ?></td>
+            <td><?php echo e($zapa->getTipo()); ?></td>
+            <td><?php echo e($zapa->getPrecio()); ?></td>
+            <td><?php echo e($zapa->getId()); ?></td>
             <td><a href="index.php">Volver</a></td>
         </tr>
     </table>

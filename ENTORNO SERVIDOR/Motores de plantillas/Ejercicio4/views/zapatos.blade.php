@@ -18,10 +18,10 @@
         </tr>
             @foreach ($zapatos as $zapa)
                 <tr>
-                    <td>{{$zapa->marca}}</td>
-                    <td>{{$zapa->modelo}}</td>
-                    <td>{{$zapa->tipo}}</td>
-                    <td>{{$zapa->precio}}</td>
+                    <td>{{$zapa->getMarca()}}</td>
+                    <td>{{$zapa->getModelo()}}</td>
+                    <td>{{$zapa->getTipo()}}</td>
+                    <td>{{$zapa->getPrecio()}}</td>
                 </tr>
             @endforeach
     </table>
