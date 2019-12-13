@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola mundo</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="Preguntas.js"></script>
+</head>
+<body onload="cargar()">
+<div id="index">
+    <div id="botones">
+        <h1>Indica que operación quieres realizar</h1>
+        <input type="button" value="Insertar preguntas" onclick="insertarPreguntas()">
+        <input type="button" value="Generar examen" onclick="generarExamen()">
+    </div>
+
+    <div id="añadirPreguntas">
+        <div>
+            <textarea rows="2" cols="20" id="pregunta" placeholder="Enunciado de la pregunta"></textarea>
+            <br/>
+            <textarea rows="2" cols="20" id="respuesta1" placeholder="Respuesta 1"></textarea>
+            <input type="radio" name="respuesta" value="resp1">
+            <label>correcta</label>
+            <br/>
+            <textarea rows="2" cols="20" id="respuesta2" placeholder="Respuesta 2"></textarea>
+            <input type="radio" name="respuesta" value="resp2">
+            <label>correcta</label>
+            <br/>
+            <textarea rows="2" cols="20" id="respuesta3" placeholder="Respuesta 3"></textarea>
+            <input type="radio" name="respuesta" value="resp3">
+            <label>correcta</label>
+            <br/>
+            <textarea rows="2" cols="20" id="respuesta4" placeholder="Respuesta 4"></textarea>
+            <input type="radio" name="respuesta" value="resp4">
+            <label>correcta</label>
+            <br/>
+            <br/>
+
+            <input type="submit" value="Añadir pregunta" onclick="añadirPregunta()">
+        </div>
+        <div id="error">
+
+        </div>
+    </div>
+</div>
+<div id="examen">
+    <input type="button" value="Prueba" onclick="mandarExamenServidor()">
+    <div id="preguntasExamen">
+
+    </div>
+    <input type="button" value="SiguientePregunta" onclick="comprobarYSiguiente()">
+</div>
+<div id="resultado">
+</div>
+</body>
+</html>

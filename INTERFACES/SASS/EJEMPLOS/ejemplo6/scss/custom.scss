@@ -1,0 +1,24 @@
+$theme-colors: (
+  "primary": #7ed3b2,
+  "danger": #b80c03
+);
+
+$border-radius: 10rem;
+
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+@import "../bootstrap/scss/grid";
+@import "../bootstrap/scss/navbar";
+@import "../bootstrap/scss/utilities";
+@import "../bootstrap/scss/transitions";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/buttons";
+@import "../bootstrap/scss/forms";
+
+.main-form {
+    width: 450px;
+    margin: auto;
+}

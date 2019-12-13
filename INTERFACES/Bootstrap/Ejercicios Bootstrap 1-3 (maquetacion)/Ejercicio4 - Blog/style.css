@@ -1,41 +1,39 @@
-.header {
-	background: green;
-	border: 1px solid #FFF;
-}
-body{
+body {
 	text-align: center;
-	color:#FFF;
-	display: flex;
-
-	align-items: center
-}
-#nave{
-	background-color: #e3f2fd;
-}
-.footer{
-	background: gray;
-}
-.cuerpoPag{
-	background-color: violet;
-}
-.articulos{
-	background-color: greenyellow;
 }
 
-.paginacion{
-	background-color: yellow;
-}
-.lateral{
-	background-color: red;
-}
-.jumbo{
-	color: black;
-	background-color: coral;
+.nav, .jumbotron, .seccion, .articulo {
+	border: 5px solid #FFF;
 }
 
-@media only screen and (max-width: 575px){
+/*--NAV--*/
 
+.nav {
+	background: #90C3D4;
 }
-@media only screen and (max-width: 765px) and (min-width: 575px){
-	
+
+.jumbotron {
+	background: #EB7738;
+}
+
+/*--POST--*/
+
+.seccion {
+	background: rgb(255, 255, 255);
+}
+
+.articulo {
+	background: rgb(255, 255, 255);
+}
+
+.paginacion {
+	background: rgb(255, 255, 255);
+}
+
+.aside {
+	background: #DE4516;
+}
+
+.footer {
+	background: #C1C7C9;
 }

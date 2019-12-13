@@ -1,0 +1,22 @@
+$colorUno: #fffe9a;
+$colorDos: #f16821;
+
+
+section{
+    background: $colorUno;
+    h1{
+        background: #f3a333;  
+    }
+    h2{
+        background: $colorDos;
+    }
+    p{
+        background: #cd4545;
+    }
+}
+
+footer{
+    p{
+        background: $colorUno;
+    }
+}
