@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Preguntas = /** @class */ (function () {
     function Preguntas(pregunta, respuesta1, respuesta2, respuesta3, respuesta4, correcta) {
         this._pregunta = pregunta;
@@ -51,3 +53,4 @@ var Preguntas = /** @class */ (function () {
     });
     return Preguntas;
 }());
+exports.default = Preguntas;

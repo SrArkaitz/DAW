@@ -1,4 +1,4 @@
-class Preguntas {
+export default class Preguntas {
     private _pregunta: string;
     private _respuesta1: string;
     private _respuesta2: string;
