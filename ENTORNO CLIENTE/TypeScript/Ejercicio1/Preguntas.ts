@@ -1,12 +1,12 @@
-export default class Preguntas {
+    export default class Preguntas {
     private _pregunta: string;
     private _respuesta1: string;
     private _respuesta2: string;
     private _respuesta3: string;
     private _respuesta4: string;
-    private _correcta: number;
+    private _correcta: string;
 
-    constructor (pregunta: string, respuesta1: string, respuesta2: string, respuesta3: string, respuesta4: string, correcta: number) {
+    constructor (pregunta: string, respuesta1: string, respuesta2: string, respuesta3: string, respuesta4: string, correcta: string) {
         this._pregunta = pregunta;
         this._respuesta1 = respuesta1;
         this._respuesta2 = respuesta2;
@@ -36,7 +36,7 @@ export default class Preguntas {
         return this._respuesta4;
     }
 
-    get correcta(): number {
+    get correcta(): string {
         return this._correcta;
     }
 }

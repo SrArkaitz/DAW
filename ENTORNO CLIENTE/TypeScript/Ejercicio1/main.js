@@ -26,10 +26,9 @@ function añadirPregunta() {
     var respuesta3 = document.getElementById("respuesta3");
     var respuesta4 = document.getElementById("respuesta4");
     var respCorrecta = $('input[name="respuesta"]:checked').val();
-    console.log(respCorrecta);
     try {
         if (pregunta.value != "" && respuesta1.value != "" && respuesta2.value != "" && respuesta3.value != "" && respuesta4.value != "" && respCorrecta != undefined) {
-            preguntas[numPregunta] = new Preguntas_1.default(pregunta.value, respuesta1.value, respuesta2.value, respuesta3.value, respuesta4.value, respCorrecta);
+            preguntas[numPregunta] = new Preguntas_1.default(pregunta.value, respuesta1.value, respuesta2.value, respuesta3.value, respuesta4.value, respCorrecta.toString());
             numPregunta++;
             limpiarCampos();
         }
