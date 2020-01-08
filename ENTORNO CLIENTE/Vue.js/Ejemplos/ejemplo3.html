@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+
+<div id="example-2">
+<simple-contador></simple-contador>
+<simple-contador></simple-contador>
+<simple-contador></simple-contador>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+Vue.component ('simple-contador', {
+template: '<button v-on:click="contador += 1">{{ contador }}</button>',
+data: function () {
+var objeto= { contador: 0}
+return objeto;
+}
+})
+
+new Vue ({
+    el: '#example-2'
+})
+
+</script>
+
+</body>

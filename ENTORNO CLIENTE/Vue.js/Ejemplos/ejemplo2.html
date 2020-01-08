@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF -8">
+    <title>Title </title>
+</head>
+<body>
+
+    <div id="example">
+        <my-component ></my-component>
+        <my-second-component></my-second-component>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+    // registro
+        Vue.component('my-component',{
+            template: '<div>A custom component!</div>'
+        })
+        Vue.component('my-second-component',{
+            template: '<p>Hola mundo</p>'
+        })
+        // crear la instancia principal
+        new Vue ({
+        el: '#example'
+        })
+    </script>
+
+</body>
+</html>

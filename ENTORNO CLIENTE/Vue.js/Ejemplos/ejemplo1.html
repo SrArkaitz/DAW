@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF -8">
+<title>Title </title>
+</head>
+<body>
+
+    <div id="saludo">
+        {{ mensaje }}
+    </div>
+    <div id='hola'>
+        <p>{{variable}}</p>
+    </div>
+    <!-- development version , includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+    // Crear una instancia de vue
+    const app = new Vue ({
+        el: '#saludo',
+        data: {
+            mensaje: 'Hola Mundo v1!'
+        }
+    })
+    const app2 = new Vue({
+        el: '#hola',
+        data:{
+            variable: 'Hola mundo v2!'
+        }
+    })
+</script>
+</body>
+</html>
