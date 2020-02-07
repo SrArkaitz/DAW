@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+    <script src="funcionalidad.js"></script>
+    <script src="Clases/Persona.js"></script>
+    <script src="Clases/Alumno.js"></script>
+    <script src="Clases/Profesor.js"></script>
+    <script src="Clases/Centro.js"></script>
+    <script src="vue.js"></script>
+
+
+</head>
+<body>
+<h1>Formulario</h1>
+<button onclick="mostrarProfAlumn()">Mostrar profesores y alumnos</button>
+<form action="" id="formcentro">
+    <label>Direccion:</label><br>
+    <input type="text" id="direccion" name="direccion" value="">
+    <br>
+    <label>Especializacion:</label><br>
+    <input type="text" id="especializacion" name="especializacion" value="">
+    <br>
+    <label>Horario:</label><br>
+    <input type="text" id="horario" name="horario" value="">
+    <br>
+</form>
+<label>Tipo</label><br>
+<select id="tipo">
+    <option selected disabled value="">Profe/Alumno</option>
+    <option value="1">Alumno</option>
+    <option value="2">Profe</option>
+</select>
+
+
+
+<form action="" id="formalumno" style="display: none">
+    <label>Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" value="">
+    <br>
+    <label>Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" value="">
+    <br>
+    <label>Sexo:</label><br>
+    <input type="text" id="sexo" name="sexo" value="">
+    <br>
+    <label>Curso:</label><br>
+    <input type="text" id="curso" name="curso" value="">
+    <br>
+    <label>Edad:</label><br>
+    <input type="text" id="edad" name="edad" value="">
+    <br>
+    <p>
+        <button type="button" onclick="datosAlumno()">Enviar</button>
+    </p>
+</form>
+
+<div id="app">
+
+</div>
+<div id="mostrar"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+<script src="app.js"></script>
+
+
+
+</body>
+</html>
